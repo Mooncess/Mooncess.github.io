@@ -1,0 +1,157 @@
+.Greeting {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 42px;
+
+    animation-name: a-greeting;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.aboutPortal {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding: 40px 40px 0 40px;
+}
+
+.dragon-img {
+    height: 260px;
+    width: 420px;
+}
+
+@media (max-width: 480px) {
+    .What-can-I-do::before, .What-can-I-do::after {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .dragon-img {
+        height: 160px;
+        width: 320px;
+    }
+    main {
+        padding: 0;
+    }
+    .Greeting {
+        padding-top: 100px;
+    }
+}
+
+.What-can-I-do {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 40px 0px 40px;
+}
+
+.What-can-I-do::before, .What-can-I-do::after {
+    content: '';
+    background-color: rgb(40, 32, 32);
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.What-can-I-do::before {
+    margin-left: -60px;
+}
+
+.What-can-I-do::after {
+    margin-left: 5px;
+}
+
+.Action {
+    padding-top: 1.2rem;
+    text-align: center;
+}
+
+.act {
+    text-align: center;
+    font-size: 26px;
+}
+
+.hint {
+    color:rgb(105, 130, 254);
+}
+
+.hint:hover {
+    color:rgb(255, 178, 62);
+}
+
+.divider {
+    border-bottom: 0.2rem solid #eaeaea;
+}
+
+.reg {
+    text-align: center;
+    font-size: 28px;
+    padding: 20px 0px 20px 0px;
+}
+
+.content {
+    padding-bottom: 40px;
+}
+
+.g-content {
+    opacity: 0;
+
+    animation-name: fadeForm;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes a-greeting {
+    0% {
+        transform: translateY(30vh);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translateY(30vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPortal {
+      padding: 40px 0 0 0;
+    }
+}

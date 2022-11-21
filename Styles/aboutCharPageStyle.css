@@ -1,0 +1,352 @@
+.characters-name {
+    text-align: center;
+    font-size: 40px;
+}
+
+.characters-quote {
+    text-align: center;
+    font-size: 20px;
+}
+
+.Dossier {
+    padding: 40px 9rem;
+}
+
+.info {
+    width: 280px;
+    margin-left: .5rem;
+    float: right;
+    border: 0.15rem solid #000000;
+}
+
+.info-name {
+    background-color: rgb(142, 62, 62);
+    color: aliceblue;
+    font-size: 24px;
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 0.15rem solid #000000;
+}
+
+.info-gen {
+    padding: 10px .5rem;
+    background-color: #a7a4a4;
+    border-top: 0.1rem solid #000000;
+    font-weight: bold;
+}
+
+.g-info {
+    font-size: 20px;
+}
+
+.toc {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin: 24px auto 24px 0;
+    display: table;
+    padding: 7px;
+}
+
+.toc-title {
+    display: flex;
+    border-bottom: 1px solid #000000;
+
+}
+
+.cont-icon {
+    padding-top: 5px;
+}
+
+.tt {
+    font-size: 24px;
+}
+
+ol {
+   /* убираем стандартную нумерацию */
+   list-style: none;
+   /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+   counter-reset: li;
+   padding-left: 16px;
+}
+
+ol li {
+    padding: 4px 0;
+}
+
+ol li:before {
+   /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+   counter-increment: li;
+   /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+   content: counters(li, ".") ". ";
+}
+
+.divider {
+    border-bottom: 0.2rem solid #eaeaea;
+}
+
+.point:hover {
+    background-color: #53535365;
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+.Chapter {
+    font-size: 30px;
+}
+
+.inChapter {
+    font-size: 22px;
+    padding: 5px 0;
+}
+
+.chapter-info {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+ul li {
+    padding: 4px 0;
+    
+}
+
+.info-img {
+    margin-bottom: -4px;
+    cursor: pointer;
+}
+
+.line {
+    background-color: rgb(0, 0, 0);
+}
+
+.bl-line {
+    content: '';
+    background-color: rgba(255, 0, 0, 0.668);
+    width: 93px;
+    height: 3px;
+}
+
+/* Слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: 0 auto;
+    height: 450px;
+    padding-top: 40px;
+}
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+/* Кнопки вперед и назад */
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.679);
+}
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.7
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 970px) {
+
+    .Dossier {
+        padding: 20px 0;
+    }
+
+    .g-info {
+        padding-top: 20px;
+    }
+
+    .chapter-info {
+        text-align: left;
+    }
+    .p-info {
+        text-align: left;
+    }
+}
+
+@media (max-width: 840px) {
+    .info {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .Dossier {
+        padding: 40px 0;
+    }
+
+    .g-info {
+        padding-top: 20px;
+    }
+
+    .chapter-info {
+        text-align: left;
+    }
+    .p-info {
+        text-align: left;
+    }
+    .slider .item img {
+        height: 100%;
+    }
+
+    .slider{
+        height: 100%;
+    }
+}
+
+.wrapper-SAB {
+    text-align: center;
+}
+
+.special-act-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.but-cont {
+
+    align-items: center;
+    margin: 20px 10px;
+    cursor: pointer;
+
+    height: 64px;
+    width: 64px;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 32px;
+    
+    background-color: rgb(222, 222, 222);
+}
+
+.bll::after, .mbb::after, .shh::after {
+    cursor:default;
+
+    align-items: center;
+    text-align: center;
+
+    color: #eaeaea;
+    font-size: 18px;
+    position:absolute;
+    margin-bottom: 120px;
+    background-color: #000000b8;
+
+    padding: 5px 10px;
+    height: 20px;
+
+    border-radius: 10px;
+    
+    opacity: 0;;
+}
+
+.bll::after {
+    content: "Нравится";
+}
+
+.mbb::after {
+    content: "Добавить в Избранное";
+}
+
+.shh::after {
+    content: "Скопировать URL";
+}
+
+.bll:hover::after, .mbb:hover::after, .shh:hover::after {
+    opacity: 1;
+}
+
+.loading-img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+
+    animation-name: fadeForm;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.content {
+    opacity: 0;
+
+    animation-name: rfadeForm;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rfadeForm {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeForm {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

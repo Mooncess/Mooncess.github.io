@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePortal</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="Images/icons8-контроллер-32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/generalStyle.css">
+    <link rel="stylesheet" href="Styles/regStyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="logo"></div>
+            <h1 class="GP">『GamePortal』</h1>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a class="lmenu" href="index.html">Главная</a></li>
+                <li><a class="lmenu" href="Characters.html">Персонажи</a></li>
+                <li><a class="lmenu" href="Entrance.html">Войти</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>   
+        <div class="content"></div>
+            <form action="" method="post">
+                <div class="register-form-container">
+                    <h1 class="form-title">
+                        Регистрация
+                    </h1>
+                    <div class="form-field-name">
+                        <input type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="form-field-mail">
+                        <input type="email" placeholder="Почта" required>
+                    </div>
+                    <div class="form-field-pswd">
+                        <input type="password" placeholder="Пароль" required>
+                    </div>
+                    <div class="form-field-pswd-2">
+                        <input type="password" placeholder="Повторите пароль" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="button" type="submit">Регистрация</button>
+                        <div class="divider">Или</div>
+                        <a href="Entrance.html" class="button button-or">Уже есть аккаунт</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <div class="wrapper-footer">
+            <div class="about-portal">
+                <h3 class="f-h3">GamePortal</h3>
+                <a class="a-f">О нас</a><br>
+                <a class="a-f">Редакция</a><br>
+                <a class="a-f">Контакты</a>
+            </div>
+            <div class="docs">
+                <h3 class="f-h3">Документы</h3>
+                <a class="a-f">Пользовательское соглашение</a><br>
+                <a class="a-f">Информация для правообладателей</a>
+            </div>
+            <div class="social">
+                <div class="social_buttons">
+                    <a class="social_button" href="https://vk.com"><img src="Images/icons8-вконтакте.svg"></a>
+                    <a class="social_button" href="https://www.instagram.com"><img src="Images/icons8-instagram.svg"></a>
+                    <a class="social_button" href="https://www.youtube.com/"><img src="Images/icons8-youtube-play.svg"></a>
+                    <a class="social_button" href="https://telegram.org/"><img src="Images/icons8-телеграмма-app.svg"></a>
+                    <a class="social_button" href="https://github.com/"><img src="Images/icons8-github.svg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
