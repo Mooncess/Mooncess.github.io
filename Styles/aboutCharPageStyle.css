@@ -138,6 +138,7 @@ ul li {
     margin: 0 auto;
     height: 450px;
     padding-top: 40px;
+    max-width: 1050px;
 }
 /* Картинка масштабируется по отношению к родительскому элементу */
 .slider .item img {
